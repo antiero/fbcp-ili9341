@@ -39,6 +39,8 @@
 #include "waveshare_st7789vw_hat.h"
 #elif defined(WAVESHARE_ST7735S_HAT)
 #include "waveshare_st7735s_hat.h"
+#elif defined(ADAFRUIT_ST7789V_BONNET)
+#include "adafruit_st7789v_bonnet.h"
 #endif
 
 #define InitSPIDisplay InitST7735R

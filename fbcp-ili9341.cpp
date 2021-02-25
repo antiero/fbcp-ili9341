@@ -105,6 +105,11 @@ int main()
   displayOff = false;
   InitLowBatterySystem();
 
+#ifdef ADAFRUIT_ST7789V_BONNET
+  printf("Forcing display backlight on for Adafruit 1.3inch TFT bonnet\n");
+  TurnDisplayOn();
+#endif
+
   // Track current SPI display controller write X and Y cursors.
   int spiX = -1;
   int spiY = -1;
